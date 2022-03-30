@@ -1,14 +1,17 @@
 # Project 5
-## Project Overview
-[Overview]
-# Part 1
-## Run Project Locally
-* how you installed docker + dependencies (WSL2, for ex)
+# Project Overview
+Project 5 seeks to containerize an application or file, automate its deployment with Github actions, and use webhooks to keep production running smoothly 
+# Part 1 - Dockerize it
+* how to install docker + dependencies
+    * Docker Desktop is provided for free on [the website](https://docs.docker.com/desktop/windows/install/). After downloading and running it, the CLI tools are set up. Choosing the httpd image as a base, I had no other dependencies to install. 
 * how to build the container
+    * `docker build -t [Container Name]:[Tag] [Directory containing dockerfile]`
 * how to run the container
+    * `docker run -dit --name [container name] -p 8080:80 [image name]`
 * how to view the project (open a browser...go to ip and port...)
+    * Go to http://localhost:8080 to see the site content given to Apache2
 
-# Part 2
+# Part 2 - GitHub Actions and DockerHub
 * Create DockerHub public repo
     * [process to create]
 * Allow DockerHub authentication via CLI using Dockhub credentials
@@ -18,7 +21,7 @@
 * Configure GitHub Workflow
     * [variables to change (repository, etc.)]
 
-# Part 3
+# Part 3 - Deployment
 * Creating a webhook
 
 # Extra Credit - DIY
