@@ -13,20 +13,38 @@ Project 5 seeks to containerize an application or file, automate its deployment 
 
 # Part 2 - GitHub Actions and DockerHub
 * Create DockerHub public repo
-    * [process to create]
-* Allow DockerHub authentication via CLI using Dockhub credentials
+
+    On [Docker Hub](https://hub.docker.com/repositories), go to the repositories tab and click create repository. Fill in the name and desription of the repository and hit create. 
+
+* How to authenticate with DockerHub via CLI using DockHub credentials
+
+    A user can authenticate with DockerHub through a username/password combo OR an authorization token. Tokens are the better option considering that they can be created with certain scope unlike a password which gives total access. To setup an authorization token you go to your account settings and click the security tab. Once there you'll see an area for access tokens. As a free account, you get one access token that cannot be recovered. If you forget to save it, the token must be remade.
+
+    When creating an authorization token, click "new access token" and copy the key into a text file so that you don't lose it. Then go to the command line and use the command:
+
+    `docker login -u [username]`
+
+    Afterwards you will be prompted for your password, or in this case token, so paste it into the terminal.
 * Configure GitHub Secrets
-    * [what credentials are needed - DockerHub credentials (do not state your credentials)]
-    * [set secrets and secret names]
-* Configure GitHub Workflow
-    * [variables to change (repository, etc.)]
+
+    [what credentials are needed - DockerHub credentials (do not state your credentials)]
+
+    [set secrets and secret names]
+
+* behavior of GitHub Workflow
+    
+    what does it do and when
+    
+    [variables to change (repository, etc.)]
 
 # Part 3 - Deployment
-* Creating a webhook
+* Container restart script
+    * what it does
+* Webhook task definition file
+    * what it does
+* Setting up a webhook on the server
+    * how you created your own listener 
+    * how you installed and are running the webhook on Github
+* Setting up a notifier in GitHub or DockerHub
 
-# Extra Credit - DIY
-* pick a project and create a docker container
-* Document and include:
-    * Dockerfile that builds your project and environment
-    * Image with your project (link from DockerHub) / docker pull command
-    * Instructions to run container from image
+# Part 4 - Diagramming
