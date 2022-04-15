@@ -27,13 +27,13 @@ Project 5 seeks to containerize an application or file, automate its deployment 
     Afterwards you will be prompted for your password, or in this case token, so paste it into the terminal.
 * Configure GitHub Secrets
 
-    For this particular workflow, the docker username and password are required credentials 
+    For this particular workflow, the docker username and token are required credentials 
 
-    To set secrets on github you go to the settings of your repo and click the secrets tab. Once there, you click create new repository secret and it presents you with a field for a name and the value of the secret. For this project I selected my username and password for docker as the secrets named:
+    To set secrets on github you go to the settings of your repo and click the secrets tab. Once there, you click create new repository secret and it presents you with a field for a name and the value of the secret. For this project I selected my username and token for docker as the secrets named:
     
     DOCKER_USERNAME
     
-    DOCKER_PASSWORD
+    DOCKER_TOKEN
 
 
 * Behavior of GitHub Workflow
