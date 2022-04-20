@@ -1,0 +1,7 @@
+[
+  {
+    "id": "redeploy-webhook",
+    "execute-command": "/home/ec2-user/restart-script.sh",
+    "command-working-directory": "/go/home/ec2-user/go/bin/webhook"
+  }
+]
