@@ -54,9 +54,8 @@ Nothing would have to be changed except for the repository name located in the e
 The container restart script ends the container currently running if there is one, removes unused containers, pulls the latest image and then runs it.
 ### Webhook task definition file
 
-The webhook task definition file is set up to execute the container restart script 
+The webhook task definition file is set up to execute the container restart script. This can be seen in the hooks.json file within the repository. 
 ### Setting up a webhook on the server
-#### Listener Creation
 Once the server is running, installing the webhook is the next step. I completed this through downloading GO and installing the webhook from GO's package manager. This was done with the following commands:
 
 `wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz` To download the installation files for go.
